@@ -3,7 +3,7 @@
 ## Project Overview
 "MANN KI BAAT" is a content management tool designed to allow users to create accounts, post photos with titles and descriptions, and interact with other users through profile and post management functionalities.
 
-##Features:
+## Features:
 
 - **User Authentication and Authorization**:
 - Users can create accounts and authenticate securely.
@@ -35,10 +35,13 @@ Follow these steps to set up and run "MANN KI BAAT" on your local server.
 Clone the Repository
 
 ```sh
-Copy code
-git clone https://github.com/your-username/mann_ki_baat.git
-cd mann_ki_baat
+git clone https://github.com/akshatgoel-143/mann-ki-baat.git
+cd mann-ki-baat
 ```
+## Move the Project Folder:
+- Make sure to rename the folder as "MannKiBaat"
+- Cut and paste the entire project folder (mann_ki_baat or whichever folder contains your PHP project) into the htdocs directory of your XAMPP installation.
+- Your Project directory should look like: *XAMPP/htdocs/MannKiBaat*
 
 ## Import Database
 
@@ -46,11 +49,41 @@ cd mann_ki_baat
 - Create a new database (e.g., mann_ki_baat_db).
 - Import the SQL file database.sql located in the root directory of the project into your database.
 
-**MySQL command line**:
+**Follow the below steps**:
+
+- If MySQL is not recognized as a command, you might need to navigate to the MySQL bin directory where mysql.exe is located. This is typically something like:
 ```sh
-Copy code
-mysql -u username -p mann_ki_baat_db < database.sql
+cd C:\path\to\mysql\bin
+Replace C:\path\to\mysql\bin with the actual path where MySQL is installed on your system.
 ```
+
+-Log into MySQL Server:
+Enter the following command and replace username with your MySQL username or root:
+```sh
+mysql -u username -p
+```
+
+Press Enter. You will be prompted to enter your MySQL password. After entering the password, press Enter again. If successful, you will see the MySQL command prompt (mysql>).
+
+- Create a New Database (If Needed):
+If you haven't created a database (mann_ki_baat_db) yet, you can create it using the following command at the MySQL prompt:
+```sql
+CREATE DATABASE mann_ki_baat_db;
+```
+Replace mann_ki_baat_db with your desired database name.
+
+- Switch to the Desired Database:
+Use the following command to switch to the database where you want to import the SQL file (mann_ki_baat_db):
+```sql
+USE mann_ki_baat_db;
+```
+
+-Import SQL File:
+Execute the following command to import the SQL file (mann_ki_baat.sql) into your database. Make sure you provide the correct path to the SQL file:
+```sh
+mysql -u username -p mann_ki_baat_db < path/to/database.sql
+```
+Replace username with your MySQL username or root.
 
 ## Configure Database Connection
 
@@ -78,7 +111,7 @@ $db['default'] = array(
 
 ## Access the Application
 
-- Open your web browser and navigate to http://localhost/mann_ki_baat
+- Open your web browser and navigate to http://localhost/mannkibaat
 - OR (replace localhost with your server's IP or domain if necessary).
 
 ## Login
