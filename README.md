@@ -116,9 +116,9 @@ $db['default'] = array(
 
 ## Login
 
-Use default login credentials if provided:
-Username: admin
-Password: admin
+- Use default login credentials if provided:
+	- Username: admin
+	- Password: admin
 
 ## Usage
 - **Create Account**: Sign up for a new account.
