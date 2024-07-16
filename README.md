@@ -6,22 +6,22 @@
 ## Features:
 
 - **User Authentication and Authorization**:
-- Users can create accounts and authenticate securely.
+	- Users can create accounts and authenticate securely.
   
 - **Post Management**:
-- Users can create, read, update, and delete (CRUD) posts consisting of photos, titles, and descriptions.
+	- Users can create, read, update, and delete (CRUD) posts consisting of photos, titles, and descriptions.
 
 - **User Profile Management**:
-- Users can manage their profiles, update information, and view their own posts.
+	- Users can manage their profiles, update information, and view their own posts.
   
 - **Explore Posts**:
-- Users can browse and view posts made by other users.
+	- Users can browse and view posts made by other users.
 
 - **User List**:
-- Displays a list of users for easy navigation and exploration.
+	- Displays a list of users for easy navigation and exploration.
 
 - **User Profile View**:
-- Users can view detailed profiles of other users, including their posts.
+	- Users can view detailed profiles of other users, including their posts.
 
 # Getting Started
 Follow these steps to set up and run "MANN KI BAAT" on your local server.
@@ -57,7 +57,7 @@ cd C:\path\to\mysql\bin
 Replace C:\path\to\mysql\bin with the actual path where MySQL is installed on your system.
 ```
 
--Log into MySQL Server:
+- Log into MySQL Server:
 Enter the following command and replace username with your MySQL username or root:
 ```sh
 mysql -u username -p
