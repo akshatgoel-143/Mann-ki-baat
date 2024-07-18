@@ -1,35 +1,7 @@
 <?php $this->load->view('header');  ?>
 
-<?php //$this->load->view('sidebar');  
-?>
 <div class="content-container">
-    <div class="sidebar">
-        <h2>Our Users</h2>
-
-        <?php foreach ($all_user as $user) { ?>
-            <a class="user-link" href="<?php echo base_url('profile/'.$user['id']); ?>">
-            <div class="user">  
-                    <img src="<?php echo base_url('assets/images/profile_pictures/' . $user['profile_photo']) ?>" alt="Avatar" class="avatar">
-                    <div class="user-data">
-                        <h3><?php echo $user['name']; ?><h3>
-                        <small><?php echo $user['username']; ?></small>
-                        <p class="post-count">
-                            <?php
-                            $post_count = 0;
-                            foreach ($posts as $post) {
-                                if ($post['user_id'] == $user['id']) {
-                                    $post_count++;
-                                }
-                            }
-                            echo $post_count . ' posts';
-                            ?>
-                        </p>
-                    </div>   
-            </div>
-            </a>
-        <?php  } ?>
-        <p>End of Users</p>
-    </div>
+<?php $this->load->view('sidebar');  ?>
     <div class="content">
         <?php foreach ($posts as $post) { ?>
             <div class="post">

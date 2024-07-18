@@ -87,4 +87,5 @@ class Post extends CI_Controller
         $this->post_model->delete_post($post_id);
         redirect('profile/'.$user_id);
     }
+    
 }
